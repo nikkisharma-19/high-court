@@ -1,0 +1,364 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  body .container{
+    overflow:auto;
+    position:static;
+  }
+  body{
+    width: 100%;
+    height: 1100px;
+    animation-name:bg;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    background-image: url("images/rhcp_new_building2.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: auto;
+    background-attachment: fixed;
+  }
+  
+  @keyframes bg{
+    0%   {background-image: url("images/rhcp_new_building2.JPG");}
+    25%  {background-image: url("images/rhcb_heritage.JPG");}
+    50%  {background-image: url("images/HM.JPG");}
+    75%  {background-image: url("images/bg_new_4.JPG");}
+    100% {background-image: url("images/bg_new_1.JPG") ;}
+  }
+  .main{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content:space-between;
+    /* padding-top: 30px; */
+    /* align-items: end; */
+  }
+  .main img{
+    padding-left: 20px;
+    /* padding-top: 10px; */
+  }
+  .main h2{
+    padding-top: 10px;
+    font-size: 20px;
+    align-items: center;
+  }
+  .single{
+    width: 300px;
+    display: flex;
+    gap: 25px;
+    padding-top: 13px;
+  }
+  .di{
+    background: #000;
+    opacity: 0.5;
+    border-bottom-left-radius: 56px;
+    /* padding-right: 7px;
+    padding-left: 0px; */
+    height:30px;
+    width: 340px;
+    padding: 5px; 
+    margin: 0px;
+    padding-top: 0px;
+    float: right;
+  }
+  .di button{
+    width: 44px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    color: #000;
+    display: inline-block;
+    font-size: 16px;
+    /* margin-left: 20px; */
+    font-weight: bolder;
+    background: #fff;
+    padding-left: 10px; 
+    padding-right: 10px;
+    /* float :right; */
+}
+.navbar {
+  overflow: hidden;
+  background-color: #0e0c0c;
+  opacity: 0.6;
+  margin-top: 0px;
+  height: 45px;
+  margin-top: 10px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  padding: 13px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 13px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: white;
+  color: #000;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+  color: rgb(123, 117, 117);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.upward {
+  display: inline-block;
+  width: 30px;
+  height: 250px;
+  padding: 10px 11px;
+  background-color: black;
+  opacity: 0.8;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px 5px 5px 5px;
+  position: fixed;
+
+}
+
+/* .container { 
+  display: flex;
+  justify-content:;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Allow flex items to wrap to the next line */
+  /* gap: 10px; */
+  /* Add gap between flex items */
+  /* margin-top: 350px; */
+  /* Add margin to the top */
+
+
+
+/* } */
+
+/* .dropbtn {
+  background-color: rgb(5, 4, 4);
+  color: white;
+  padding: 7px 80px;
+  /* Increased padding */
+  /* font-size: 16px; */
+  /* Increased font size */
+  /* border: none; */
+
+
+
+
+
+
+/* } */ 
+
+/* .dropup {
+  position: relative;
+  background-color: black;
+  opacity: 0.8;
+
+}
+
+.dropup-content {
+  display: none;
+  position: absolute; */
+  /* background-color: #f1f1f1;
+  min-width: 220px;
+  /* Adjusted */
+  /* bottom: 5px; */
+  /* Adjusted */
+  /* z-index: 6; */
+  /* left: 0; */
+  /* border-radius: 8px; */
+  /* Added border-radius */
+
+/* } */
+
+/* .dropup-content a {
+  color: black;
+  padding: 5px 25px;
+  /* Increased padding */
+  /* text-decoration: none; */
+  /* display: block; */
+  /* clear: both; */
+  /* font-weight: normal; */
+
+/* } */ 
+
+/* .dropup-content a:hover {
+  background-color: #111010;
+  color: white;
+}
+
+.dropup:hover .dropup-content {
+  display: block;
+  color: black;
+
+}
+
+.dropup:hover .dropbtn {
+  background-color: white;
+  color: black;
+} */
+
+/* .container.second-row {
+  margin-top: 10px;
+}  */
+
+
+  
+  .midbox{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    padding-top: 600px;
+    margin: auto;
+    /* margin-left: 80px; */
+    width: 90%;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  .box{
+    height: 3%;
+    z-index: 4;
+    background-color: #000;
+    opacity: 0.5;
+    color: white;
+    width: 210px;
+    margin:15px 0px;
+    font-weight: bold;
+    font-size: 10px;
+    padding:40px 40px 40px 40px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .marquee{
+    margin-top: 40px;
+    padding: 20px;
+    background-color: black;
+    border: 3px solid;
+    height: 20px;
+  }
+  marquee ul{
+    list-style-type: none;
+  }
+  .marquee ul li a{
+    cursor: pointer;
+    text-decoration: none; 
+    color: white;
+  }
+  .marquee ul img{
+    width: 30px;
+    height: 15px;
+    /* padding: 0px 0px 2px 0px; */
+  }
+  .end{
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #000;
+    opacity: 0.5;
+    color: #fff;
+    border-bottom: 20px solid #f8baba;
+    font-size: 15px;
+    font-family: Verdana;
+    /* font-weight: bold; */
+    box-sizing: border-box;      
+  }
+  .linkbox{
+    display: flex;
+    width:95%;
+    height: 400px;
+    gap: 20px;
+    margin: auto;
+    padding-top: 40px;
+  }
+  /* .link{
+    width: 100%;
+  } */
+  .link table a{
+    color: white;
+    text-decoration: none;
+    /* padding: 10px; */
+  }
+  .link table{
+    height: 250px;
+    width: 800px;
+  }
+  /* .link table td{
+    width: 1000px;
+  } */
+ 
+  .location p{
+    padding: 20px;
+  }
+  .location p{
+    padding-bottom: 20px;
+  }
+  .footer{
+    /* height: 60px; */
+    width: 100%;
+    display: flex;
+    gap: 60px;
+    /* justify-content: space-between; */
+    background-color: #000;
+    opacity: 0.5;
+    font-weight: bold;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+  .p{
+    padding-left: 60px;
+    color: white;
+    padding: 10px 50px;
+  }
+  .hits{
+    color: black;
+    /* padding-top: 5px; */
+  }
+  .td{
+    color: white;
+    /* padding: 2px 10px; */
+  }
+  .hits button{
+    padding: 2px 4px;
+  }
+  
